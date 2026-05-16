@@ -419,3 +419,4 @@ if (track) {
         sliderWrapper.addEventListener('mouseleave', startAutoPlay);
     }
 }
+

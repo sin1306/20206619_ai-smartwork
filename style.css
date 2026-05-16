@@ -1146,8 +1146,20 @@ body.dark-theme .active-link::after {
 }
 
 /* Resource Center (Equipment) */
-.resource__container {
-    grid-template-columns: repeat(1, 1fr);
+.resource__featured {
+    margin-bottom: 2rem;
+}
+
+.resource__card--featured {
+    background: var(--gradient-water);
+    color: #FFF;
+    border: none;
+    box-shadow: 0 8px 24px rgba(10, 61, 98, 0.15);
+}
+
+.resource__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .resource__card {
@@ -1195,9 +1207,15 @@ body.dark-theme .active-link::after {
 @media screen and (min-width: 576px) {
     .certs__container { grid-template-columns: repeat(2, 1fr); }
     .factory__gallery { grid-template-columns: repeat(2, 1fr); }
-    .resource__container { grid-template-columns: repeat(2, 1fr); }
     .contact__inputs { grid-template-columns: repeat(2, 1fr); }
 }
+
+@media screen and (max-width: 768px) {
+    .resource__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .certs__container { grid-template-columns: repeat(3, 1fr); }
@@ -2611,3 +2629,4 @@ body.dark-theme select.contact__input {
     color: var(--text-color-light);
     line-height: 1.4;
 }
+
