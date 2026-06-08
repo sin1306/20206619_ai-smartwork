@@ -463,8 +463,8 @@ if (!localStorage.getItem('batech_inquiries')) {
 }
 
 // ======= 자동 답변 발송 설정 (Google Apps Script) =======
-// Gemini API 키 (Google AI Studio에서 발급)
-const AUTO_GEMINI_KEY = 'AQ.Ab8RN6JLGwgeJofYjy0MRJsgA2m2HDOttQ23oBviE6GTU5uKLA';
+// 실제 키는 api-keys.js (.gitignore 처리됨)에 정의되어 있습니다.
+const AUTO_GEMINI_KEY = (typeof SITE_AUTO_GEMINI_KEY !== 'undefined') ? SITE_AUTO_GEMINI_KEY : 'YOUR_GEMINI_API_KEY';
 
 // 발급받은 Google Apps Script Web App URL을 아래에 붙여넣어 주세요.
 const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx20h00ChCrOjqVL2lwi0gd4VlN8J5a_VB7SEbNY8Ke0-5_eV8aHEYQg69Y9QQKp8XB/exec';

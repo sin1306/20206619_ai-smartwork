@@ -2,9 +2,8 @@
 window._batechLoggedIn = window._batechLoggedIn || false;
 
 // ======= Gemini API 설정 =======
-// Google AI Studio(aistudio.google.com)에서 새 키를 발급받아 아래에 입력하세요.
-// (노출된 이전 키는 반드시 폐기 후 재발급 필요)
-const GEMINI_API_KEY = 'AQ.Ab8RN6JFAu0iOslYv5DYTJojlpfjqM24wKB6tG2U2wtEg3ktEg';
+// 실제 키는 api-keys.js (.gitignore 처리됨)에 정의되어 있습니다.
+const GEMINI_API_KEY = (typeof SITE_GEMINI_API_KEY !== 'undefined') ? SITE_GEMINI_API_KEY : 'YOUR_GEMINI_API_KEY';
 
 // Global state
 let inquiries = [];

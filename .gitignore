@@ -16,3 +16,6 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
+
+# API 키 (절대 깃허브에 올리지 않음)
+api-keys.js
